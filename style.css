@@ -1,0 +1,108 @@
+* {
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+}
+
+#task-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.task {
+    background-color: #333;
+    margin: 5px 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.task span { word-break: break-word; }
+
+#edit-section {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+}
+
+#line {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#edit-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.edit-btn {
+    background-color: #333;
+    padding: 5px 8px;
+    border-radius: 100px;
+    transition: .1s;
+    font-size: 2rem !important;
+}
+
+.edit-btn:hover {
+    background-color: #09f;
+}
+
+#create-task-popup-container {
+    background-color: #2b2b2baa;
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#create-task-popup-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    background-color: transparent;
+    height: 30vh;
+    border: 1px solid #f33446;
+    box-shadow: 0 0 5px #f33446;
+    width: 80vw;
+}
+
+textarea:focus { outline: none; }
+
+#add-btn {
+    background-color: #09f;
+    text-align: center;
+    padding: 5px;
+    margin-top: 50px;
+    border-radius: 100px;
+    transition: .1s;
+}
+
+#add-btn:hover {
+    background-color: #f33446;
+}
+
+#close-btn {
+    align-self: flex-end;
+    margin: 5px;
+}

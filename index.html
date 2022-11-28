@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO | VulnX</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="canonical" href="htttps://xosphere-gaming.github.io/TODO-PWA/" />
+        <link rel="manifest" href="/TODO-PWA/manifest.webmanifest">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="task-section">
+        </div>
+        <div id="edit-section">
+            <div id="line"></div>
+            <div id="edit-btn-container">
+                <input type="file" accept=".vdata" onchange="handleOpenFile()" style="display: none;" />
+                <span class="edit-btn material-symbols-outlined open-btn">file_open</span>
+                <span class="edit-btn material-symbols-outlined undo-btn">undo</span>
+                <span class="edit-btn material-symbols-outlined plus-btn">add</span>
+                <span class="edit-btn material-symbols-outlined del-btn">delete</span>
+                <span class="edit-btn material-symbols-outlined save-btn">save</span>
+            </div>
+        </div>
+        <div id="create-task-popup-container">
+            <div>
+                <span class="material-symbols-outlined" id="close-btn">close</span>
+                <textarea></textarea>
+                <span id="add-btn">ADD</span>
+            </div>
+        </div>
+
+        <script>
+            if (navigator.serviceWorker) {
+                navigator.serviceWorker.register(
+                    '/TODO-PWA/sw.js',
+                    { scope: '/TODO-PWA/' }
+                );
+            }
+        </script>
+
+    </body>
+</html>
