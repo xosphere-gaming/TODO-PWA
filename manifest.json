@@ -3,7 +3,7 @@
     "short_name": "VTODO",
     "description": "Innovative TODO App by VulnX",
     "scope": "/TODO-PWA/",
-    "start_url": "/TODO-PWa/",
+    "start_url": "/TODO-PWA/",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
     "display": "standalone",
@@ -13,5 +13,6 @@
             "type": "image/png",
             "sizes": "512x512"
         }
-    ]
+    ],
+    "id": "/TODO-PWA/"
 }
